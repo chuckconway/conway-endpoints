@@ -20,5 +20,5 @@ jobs:
     - name: Install dependencies
       run: dotnet restore ./src/Conway.Endpoints/Conway.Endpoints.csproj
     - name: Build
-      run: dotnet build --configuration Release --no-restore
+      run: dotnet build ./src/Conway.Endpoints/Conway.Endpoints.csproj --configuration Release --no-restore
 
