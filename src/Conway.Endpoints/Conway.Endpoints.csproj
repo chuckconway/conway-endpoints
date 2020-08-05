@@ -9,7 +9,7 @@
         <Authors>Chuck Conway</Authors>
         <Copyright>MIT</Copyright>
         <PackageProjectUrl>https://github.com/chuckconway/conway-endpoints</PackageProjectUrl>
-        <PackageLicenseUrl>https://raw.githubusercontent.com/chuckconway/conway-endpoints/master/LICENSE</PackageLicenseUrl>
+        <PackageLicense>https://raw.githubusercontent.com/chuckconway/conway-endpoints/master/LICENSE</PackageLicense>
         <RepositoryUrl>https://github.com/chuckconway/conway-endpoints</RepositoryUrl>
         <RepositoryType>GIT</RepositoryType>
         <PackageTags>C#, .Net Core, Asp.Net Core</PackageTags>
