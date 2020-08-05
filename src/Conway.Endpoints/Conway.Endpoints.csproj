@@ -2,10 +2,21 @@
 
     <PropertyGroup>
         <TargetFramework>netcoreapp3.1</TargetFramework>
+        <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageVersion>0.3.0</PackageVersion>
+        <Title>Conway.Endpoints</Title>
+        <Authors>Chuck Conway</Authors>
+        <Copyright>MIT</Copyright>
+        <PackageProjectUrl>https://github.com/chuckconway/conway-endpoints</PackageProjectUrl>
+        <PackageLicenseUrl>https://raw.githubusercontent.com/chuckconway/conway-endpoints/master/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/chuckconway/conway-endpoints</RepositoryUrl>
+        <RepositoryType>GIT</RepositoryType>
+        <PackageTags>C#, .Net Core, Asp.Net Core</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.7" />
+      <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
       <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
     </ItemGroup>
 
