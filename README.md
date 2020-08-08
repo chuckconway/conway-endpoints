@@ -132,4 +132,4 @@ public class KnownIncomingTypeAndFlexibleOutgoingTypeEndpoint : EndpointBase<Sea
 
 
 
-This project was strongly influenced by [Ardalis's Endpoint](https://github.com/ardalis/ApiEndpoints) project.
+This project was inspired by [Ardalis's Endpoint](https://github.com/ardalis/ApiEndpoints) project.
