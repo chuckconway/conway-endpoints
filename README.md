@@ -1,3 +1,5 @@
+[![Nuget](https://img.shields.io/nuget/v/Conway.Endpoints)](https://www.nuget.org/packages/Conway.Endpoints/)
+
 # Conway Endpoints
 
 Endpoints is a small library/pattern for defining a single endpoint in Asp.Net Core.  
@@ -58,7 +60,7 @@ public class KnownIncomingAndOutgoingTypesEndpoint : EndpointBase<UserDetailsReq
 
 ### 2. When there is no incoming type
 
-Sometimes requests don't have any data incoming data, it's a simple call to an endpoint. It might be a trigger or request static data,  in this case, we don't need an incoming type.
+Sometimes requests don't have any data incoming data, it's a simple call to an endpoint. It might be a trigger or a request for static data ,  in this case, we don't need an incoming type.
 
 
 
