@@ -8,7 +8,7 @@ Traditionally, controllers define endpoints through actions (any public method i
 
 
 
-Endpoint solves this problem by only having one endpoint per class, which adheres to the [single responsibility principle](https://en.wikipedia.org/wiki/Single-responsibility_principle). As a side-effect, you'll have more files to manage, but we see it as an opportunity to organize your code, thus allowing you more visibility into the application's structure.
+Endpoint solves this problem by only having one endpoint per class, which adheres to the [single responsibility principle](https://en.wikipedia.org/wiki/Single-responsibility_principle). As a side-effect, you'll have more files to manage, but we see this as an opportunity to organize your code, thus allowing you more visibility into the application's structure.
 
 
 
@@ -58,7 +58,7 @@ public class KnownIncomingAndOutgoingTypesEndpoint : EndpointBase<UserDetailsReq
 
 ### 2. When there is no incoming type
 
-Sometimes requests don't have any data incoming data, it's a simple call to an endpoint. It might be a trigger or request to retrieve static data,  in this case, we don't need an incoming type.
+Sometimes requests don't have any data incoming data, it's a simple call to an endpoint. It might be a trigger or request static data,  in this case, we don't need an incoming type.
 
 
 
