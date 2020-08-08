@@ -14,7 +14,7 @@ Endpoint solves this problem by only having one endpoint per class, which adhere
 
 ## Getting Started
 
-There are 3 use cases for Endpoint: 
+There are 3 implementations of Endpoints: 
 
 1. An endpoint where we know the incoming type and the outgoing type.
 
