@@ -1,3 +1,5 @@
+[![Nuget](https://img.shields.io/nuget/v/Conway.Endpoints)](https://www.nuget.org/packages/Conway.Endpoints/)
+
 # Conway Endpoints
 
 Endpoints is a small library/pattern for defining a single endpoint in Asp.Net Core.  
