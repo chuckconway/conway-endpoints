@@ -1,14 +1,14 @@
 # Conway Endpoints
 
-Endpoints is a small library/pattern for defining a single endpoint for a class in Asp.Net Core.  
+Endpoints is a small library/pattern for defining a single endpoint in Asp.Net Core.  
 
 
 
-Tradionally `Controllers` define endpoints through actions (any public method in a `Controller` class), when there is a small number of endpoints this works great, but as the number of actions increases  controllers becomes hard to maintain and to test. 
+Traditionally, controllers define endpoints through actions (any public method in a `Controller` class); when there are a small number of endpoints, this works great, but as the number of actions increases, controllers become hard to maintain and test. 
 
 
 
-Endpoint solves this problem by only having one endpoint per class which adheres to the [single responsibility principle](https://en.wikipedia.org/wiki/Single-responsibility_principle). As a side effect you'll have  more files to manage, but we see this as an opportunity to better organize your code giving you more visibility into the application's structure.
+Endpoint solves this problem by only having one endpoint per class, which adheres to the [single responsibility principle](https://en.wikipedia.org/wiki/Single-responsibility_principle). As a side-effect, you'll have more files to manage, but we see it as an opportunity to organize your code, thus allowing you more visibility into the application's structure.
 
 
 
@@ -26,7 +26,11 @@ There are 3 use cases for Endpoint:
 
 ### 1. Defining the incoming type and the outgoing type
 
-When you know the incoming and outgoing types. A good example  is when you request save a user to the database and return the newly saved user to the caller.
+When the incoming and outgoing types are known.
+
+
+
+For example,  user details are posted to an endpoint and the endpointed returns the saved user to the caller.
 
 ```c#
 public class KnownIncomingAndOutgoingTypesEndpoint : EndpointBase<UserDetailsRequest, UserDetailsResponse> 
@@ -54,7 +58,7 @@ public class KnownIncomingAndOutgoingTypesEndpoint : EndpointBase<UserDetailsReq
 
 ### 2. When there is no incoming type
 
-Sometimes requests don't have any data incoming data, it's a simple call to an endpoint. In this case, we don't need an incoming type.
+Sometimes requests don't have any data incoming data, it's a simple call to an endpoint. It might be a trigger or request to retrieve static data,  in this case, we don't need an incoming type.
 
 
 
@@ -91,7 +95,7 @@ public class OutgoingTypeOnlyEndpoint : EndpointBase
 
 
 
-We don't always know the type we want to return. For example, we might return an array of items under normal circumstances, however, when there is an error we might return a different type with the error details. `IActionResult` allow us this flexibly.
+We don't always know our return type. For example, we might return an array of items under normal circumstances, however, in the event of an error we might return a different type. `IActionResult` allow us this flexibly.
 
 
 
